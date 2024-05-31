@@ -14,13 +14,14 @@ jobs:
           node-version: '20.x'
       - name: Setup markmap
         run: |
-          npm ci
           npm install -g markmap-cli
       - name: Build HTML
         run: |
-          markmap -o index.html README.md
+          mkdir -p ./build
+          markmap -o ./build/index.html README.md
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
+          publish_dir: ./build

@@ -18,7 +18,13 @@ jobs:
       - name: Build HTML
         run: |
           mkdir -p ./build
+          cp ./favicon.png ./build
           markmap -o ./build/index.html README.md
+      - name: Customize HTML
+        run: |
+          sed -i 's/<title>.*<\/title>/<title>AI-900 Mindmap<\/title>/' ./build/index.html
+          # insert PNG favicon in HTML
+          sed -i '/<link rel="icon" href="favicon.ico">/i <link rel="icon" href="favicon.png">' ./build/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:

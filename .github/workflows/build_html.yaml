@@ -23,8 +23,8 @@ jobs:
       - name: Customize HTML
         run: |
           sed -i 's/<title>.*<\/title>/<title>AI-900 Mindmap<\/title>/' ./build/index.html
-          # insert PNG favicon in HTML
-          sed -i '/<link rel="icon" href="favicon.ico">/i <link rel="icon" href="favicon.png">' ./build/index.html
+          # insert PNG favicon in head
+          sed -i '/<head>/a <link rel="icon" type="image/png" href="favicon.png">' ./build/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:

@@ -1,0 +1,26 @@
+name: Deploy HTML on GH pages
+
+on:
+  - push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+      - name: Setup markmap
+        run: |
+          npm ci
+          npm install -g markmap-cli
+      - name: Build HTML
+        run: |
+          markmap -o index.html README.md
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages

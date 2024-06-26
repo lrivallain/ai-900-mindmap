@@ -6,13 +6,15 @@ markmap:
 
 ## Key words
 
-- **AI**: Computer systems that can perform tasks that normally require human intelligence by simulating or replicating human intelligence.
-- **General AI**: Subset of AI that creates new data and content.
+- **AI**: Computer systems that can perform tasks that normally 
+          require human intelligence by simulating or replicating
+          human intelligence.
+- **Generative AI**: Subset of AI that creates new data and content.
 - **Large Language Models**: AI models that can generate human-like text.
-  - Trained on larg datasets
+  - Trained on large datasets
   - Understands the context
   - Can be refined from feedback
-  - **Transformer model** is espcially good at understanding and generating language.
+  - **Transformer model** is especially good at understanding and generating language.
   - **Tokenization**: The process of breaking text into smaller units called tokens (like a puzzle).
   - **Embedding**: The process of converting words into numeric codes.
     - Helps to understand the context of the words and the relationships or similarities between them.
@@ -72,7 +74,7 @@ markmap:
     data that is unstructured or unlabeled. Deep learning term is used
     to describe neural networks with more than 3 hidden layer (which is
     mostly non-humanly interpretable).
-  - **Feed forward neural network**: (FNN) A feedforward neural network is an 
+  - **Feed forward neural network**: (FNN) A feed forward neural network is an 
     artificial neural network wherein connections between the nodes do 
     not form a cycle.
   - **Backpropagation**: (BP) A method used in artificial neural networks to 
@@ -149,7 +151,7 @@ markmap:
 ### Natural Language Processing (NLP)
 
 - Understanding the context of a corpus of text, including
-  - Analyse and interpret text documents.
+  - Analyze and interpret text documents.
   - Determines the sentiment of text based on the emotions expressed.
   - Synthesizes speech
   - Translates languages
@@ -256,7 +258,7 @@ markmap:
     - **Translator**: Real-time text language translation.
     - [**QnA Maker**](https://www.qnamaker.ai/): Create a question-and-answer layer over your data.
       - NLP service to create a conversation/question-and-answer layer over your data.
-      - Uses a fixed knowledge base to answer questions with repetable answers.
+      - Uses a fixed knowledge base to answer questions with repeatable answers.
       - Data is stored in Azure Search, then QnA Maker uses the top results to 
       answer questions with a confidence score.
       - Multi-turn conversations are supported (A question can be followed by another 
@@ -275,10 +277,11 @@ markmap:
 development, publishing and managing.
 - ==Bot Framework SDK== is an open-source SDK for building and connecting intelligent bots.
   - Works along with Azure Bot Service.
-- ==Bot Framework Composer== is a visual authoring canvas for developers and multi-disciplinary teams to 
-design and build conversational experiences with Language Understanding (LUIS) and QnA Maker.
+- ==Bot Framework Composer== is a visual authoring canvas for developers and 
+    multi-disciplinary teams to design and build conversational experiences with Language 
+    Understanding (LUIS) and QnA Maker.
   - Deploy bots on Azure Web Apps, Azure Functions
-  - Teamplate for common scenarios: QnA, Personal Assistant, Language bot, etc.
+  - Template for common scenarios: QnA, Personal Assistant, Language bot, etc.
   - Bot Framework Emulator for testing.
 
 ### Azure Machine Learning Service
@@ -295,7 +298,7 @@ design and build conversational experiences with Language Understanding (LUIS) a
 - Activities
   - Labeling
     - **Human in the loop**: A process where a human is involved in the decision-making process.
-    - **Maching learning assisted labeling**: A process where a machine learning model is used 
+    - **Machine learning assisted labeling**: A process where a machine learning model is used 
     to assist in the labeling process.
     - Export
       - COCO format
@@ -395,7 +398,7 @@ design and build conversational experiences with Language Understanding (LUIS) a
 
 ## Copilots
 
-- Type of tools that helps users wiht common tasks using generative AI.
+- Type of tools that helps users with common tasks using generative AI.
   - Trained LLM with a large dataset of data.
   - Can use Azure OpenAI services to be fine-tuned on specific tasks and data.
   - Increases productivity by providing suggestions, synthesis, planning and more.

@@ -56,6 +56,7 @@ markmap:
     - **Classification**: The algorithm learns to classify data into 
         different categories
     - **Regression**: The algorithm learns to predict a continuous value
+      - Numeric labels/values are used and predicted
   - **Unsupervised learning**: The algorithm is trained on an unlabeled dataset, 
     where the algorithm learns the patterns and relationships in the data.
     - **Clustering**: The algorithm learns to group data points into clusters
